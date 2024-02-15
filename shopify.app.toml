@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "firstproject"
+client_id = "9e03e0f311139da8357ddf8ccaf53fb1"
+application_url = "https://obligations-ddr-conceptual-discharge.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://obligations-ddr-conceptual-discharge.trycloudflare.com/auth/callback",
+  "https://obligations-ddr-conceptual-discharge.trycloudflare.com/auth/shopify/callback",
+  "https://obligations-ddr-conceptual-discharge.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "differentlook-03.myshopify.com"
